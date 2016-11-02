@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+
+      *{
+        margin: 0;
+        padding: 0;
+        }
+
+      body {
+          background: url(bg.png) no-repeat;
+          font-size: 18px;
+          font-family: Tahoma;
+          line-height: 28px;
+
+      }
+
+      h4 {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 10px;
+      }
+
+
+
+    .wrapper {
+      margin: auto;
+      padding-top: 10px;
+      width: 1000px;
+    }
+
+    .header {
+      background-color: white;
+      height: 170px;
+    }
+
+    .logo {
+      height: 50px;
+      float: left;
+      position: absolute;
+    }
+
+    .header-text {
+    float: left;
+    position: relative;
+    top:130px;
+    left: 200px;
+    bottom: 20px;
+    z-index: 1;
+      }
+
+
+    .info {
+      float: right;
+      font-size: 14px;
+      line-height: 18px;
+      position: relative;
+      top: 20px;
+      right: 30px;
+    }
+
+    .info li {
+      list-style: none;
+      position: static;
+
+    }
+
+.menu {
+  background: black;
+}
+
+    ul {
+    display: block;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+ul.menu > li > a:hover {
+    background-color: black;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 170px;
+    top: 50px;
+    left: 0;
+    background-color: white;
+
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #000;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+    .slider {
+      background: url(slider.png) no-repeat;
+      height: 230px;
+      width: 100%;
+    }
+
+    .sidebar {
+      background-color: #edeef0;
+      width: 25%;
+      float: left;
+      height: 500px;
+      text-align: center;
+      border-width: 2px;
+      border-style: solid;
+      border-color: grey;
+    }
+
+    .list1 li {
+      list-style: none;
+    }
+
+    .news {
+        background-color: #edeef0;
+        width: 25%;
+        float: right;
+        height: 500px;
+        text-align: center;
+        border-width: 2px;
+        border-style: solid;
+        border-color: grey;
+    }
+    .content {
+      background-color: white;
+      border-width: 2px;
+      border-color: grey;
+      width: 50%;
+      margin: auto;
+      height: 500px;
+      border-width: 2px;
+      border-style: solid;
+      border-color: grey;
+
+    }
+
+    .footer {
+      background-color: transparent;
+      width: auto;
+      clear: both;
+      text-align: center;
+    }
+
+    </style>
+
+
+    <title></title>
+  </head>
+  <body>
+
+<div class="wrapper">
+
+<div class="header">
+<div class="header-text">Путушествие по Азии</div>
+<div class="logo"><img src="logo.png"></div>
+<ul class="info">
+  <li>Наши контакты</li>
+  <li>+9-098-765-4321</li>
+  <li>+9-0123-456-890</li>
+  <li>+9-0123-456-890</li>
+</ul>
+
+</div>
+
+<div class="container">
+<div class="slider"></div>
+
+<ul class="menu">
+    <li><a href=#>Главная</a></li>
+    <li><a href=#>Путешествие</a>
+        <ul class="submenu">
+            <li><a href=#>Путешествие 1</a></li>
+            <li><a href=#>Путешествие 2</a></li>
+            <li><a href=#>Путешествие 3</a></li>
+            <li><a href=#>Путешествие 4</a></li>
+            <li><a href=#>Путешествие 5</a></li>
+
+        </ul>
+    </li>
+    <li><a href=#>Услуги</a>
+        <ul class="submenu">
+            <li><a href=#>Услуга 1</a></li>
+            <li><a href=#>Услуга 2</a></li>
+            <li><a href=#>Услуга 3</a></li>
+        </ul>
+    </li>
+    <li><a href=#>Партнерам</a>
+        <ul class="submenu">
+            <li><a href=#>Инфо 1</a></li>
+            <li><a href=#>Инфо 2</a></li>
+            <li><a href=#>Инфо 3</a></li>
+        </ul>
+    </li>
+    <li><a href=#>Отзывы клиентов</a></li>
+    <li><a href=#>О нас</a></li>
+    <li><a href=#>Контакты</a></li>
+</ul>
+
+<div class="sidebar">
+
+          <h4>Новости</h4>
+          <ul class="list1">
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Lorem ipsum dolor sit amet</li>
+          </ul>
+ </div>
+
+<div class="news">
+
+            <h4>Новости</h4>
+            <ul class="list1">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            </ul>
+</div>
+<div class="content"></div>
+<div class="footer"> Copyright(C) asia-holidays.com. 2010 </div>
+</div>
+
+
+  </div>
+
+</div>
+
+  </body>
+</html>
